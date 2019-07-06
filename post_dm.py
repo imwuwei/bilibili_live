@@ -78,7 +78,7 @@ def del_file_default_mp3(f):
 #下载b站任意视频，传入值：网址、点播人用户名
 def download_av(video_url,user):
     ydl_opts = {
-        'outtmpl': '/downloads/%(id)s.%(ext)s',        # outtmpl 格式化下载后的文件名,自定义文件保存路径
+        'outtmpl': 'path+/downloads/%(id)s.%(ext)s',        # outtmpl 格式化下载后的文件名,自定义文件保存路径
         'format': 'best'                                 #首选下载视频质量
         }
     if(clean_files()):  #检查空间是否在设定值以内，并自动删除多余视频缓存
